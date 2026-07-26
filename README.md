@@ -22,6 +22,8 @@ You walk away with a `DECISIONS.md` for your actual project — every recovered 
 mkdir -p ~/.claude/skills/dig && curl -fsSL https://raw.githubusercontent.com/getscribld/scribld-dig/main/SKILL.md -o ~/.claude/skills/dig/SKILL.md
 ```
 
+Requires a Claude Code version with Skills support (v2+). If a slash command isn't recognized, update Claude Code first.
+
 Or copy [SKILL.md](SKILL.md) into `~/.claude/skills/dig/SKILL.md` by hand. Then, inside any project you've worked on:
 
 ```
