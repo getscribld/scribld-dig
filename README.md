@@ -42,6 +42,14 @@ The skill is opinionated — that's the point. It looks for six things: choices 
 - **Thin history:** fewer than a handful of sessions and there's nothing to dig. Start with the hand-maintained templates in [dev-docs-starter](https://github.com/getscribld/dev-docs-starter) instead.
 - **Your history is evaporating:** Claude Code prunes session transcripts after ~30 days by default (`cleanupPeriodDays`). Whatever's older than that is already gone — decisions you want recovered should be dug before the timer gets them.
 
+## Companion tools
+
+`/dig` recovers the backlog; these keep it from building up again — all free, all local:
+
+- **[scribld-checkpoint](https://github.com/getscribld/scribld-checkpoint)** — `/checkpoint` before you `/compact`: goal, state, decisions, dead ends, next step, written to a local log.
+- **[scribld-context-passport](https://github.com/getscribld/scribld-context-passport)** — generates a portable `CONTEXT.md` that cold-starts ChatGPT/Cursor/Gemini on your project.
+- **[dev-docs-starter](https://github.com/getscribld/dev-docs-starter)** — the hand-maintained templates, including the same `DECISIONS.md` format `/dig` writes into.
+
 ## Why this exists
 
 Built by [Scribld](https://scribld.io) — persistent, searchable project memory for AI power users. `/dig` recovers what your AI already forgot; Scribld is the live version — it keeps your decision log current automatically, searchable from every AI tool you use (Claude, ChatGPT, Cursor, Gemini) via one shared memory. The skill is free, standalone, and useful without an account. If the report card's "written down nowhere else" number bothers you, you know where to find us.
